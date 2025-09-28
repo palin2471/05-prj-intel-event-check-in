@@ -95,12 +95,17 @@ body {
   background-color: #f8fafc;
   border-radius: 16px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .form-group {
   display: flex;
   gap: 15px;
   width: 100%;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Form elements */
@@ -239,8 +244,8 @@ button .fas {
 
 /* Messages */
 #greeting {
-  font-weight: 700; 
-  font-size: 24px; 
+  font-weight: 700;
+  font-size: 24px;
   padding: 16px 20px;
   border-radius: 8px;
   color: #333;
@@ -251,6 +256,19 @@ button .fas {
 .success-message {
   background-color: #e8f4fc;
   color: #003c71;
+}
+
+#greetingSection {
+  font-weight: 700;
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 15px;
+  /* Custom box styling */
+  background-color: #e8f4fc;
+  border-radius: 12px;
+  padding: 18px 24px;
+  box-shadow: 0 2px 10px rgba(0, 113, 197, 0.08);
+  display: inline-block;
 }
 
 /* Counter */
@@ -284,6 +302,8 @@ button .fas {
   flex: 1;
   display: flex;
   gap: 10px;
+  justify-content: center;
+  align-items: center;
 }
 
 select {

@@ -41,6 +41,8 @@ document.addEventListener("DOMContentLoaded", function () {
   const form = document.getElementById("checkInForm");
   const greetingEl = document.getElementById("greeting");
   const greetingSection = document.getElementById("greetingSection");
+  // Hide greeting box on page load
+  greetingSection.style.display = "none";
   form.addEventListener("submit", function (event) {
     event.preventDefault();
     const nameInput = document.getElementById("attendeeName");
@@ -55,6 +57,7 @@ document.addEventListener("DOMContentLoaded", function () {
       greetingEl.textContent = greetingMsg;
       // Show greeting message in the greetingSection
       greetingSection.innerHTML = `<span>${greetingMsg}</span>`;
+      greetingSection.style.display = "block";
       updateDisplay();
       nameInput.value = "";
       teamSelect.selectedIndex = 0;
